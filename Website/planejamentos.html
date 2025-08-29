@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grêmio</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="_Mídias/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="arrow" title="Go to top">^</button>
+    <ul class="topnav">
+        <img id="gremio_img" src="Midias/Grêmio_foto.png" alt="">
+        <li><a href="index.html">Sobre esse site</a></li>
+        <li><a href="sobreoif.html">IF para calouros</a></li>
+        <li><a href="sobre_gremio.html">Sobre o grêmio</a></li>
+        <li><a href="planejamentos.html" id="active">Agenda do IF & Grêmio</a></li>
+        <li><a href="seufeedback.html">Feedback</a></li>
+    </ul>
+
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="row">
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+
+    <div class="row">
+        <div class="card">
+            <h1>TITLE HEADING</h1>
+            <h3>Última atualização em 18 de agosto de 2025.</h3>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco.</p>
+        </div>
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h3>Title description, Sep 2, 2017</h3>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h2>Site oficial do grêmio estudantil.</h2>
+        <h3><b>Contatos:</b></h3>
+        <p>E-mail: nexusupt@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/jornal.nexus?igsh=MXhycWs0M3E5ZHZ5bw==">Clique aqui!</a></p>
+        <p>Whattsapp: (34) 99242-4300 <br> (34) 99667-5398</p>
+    </footer>
+
+
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("arrow");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
