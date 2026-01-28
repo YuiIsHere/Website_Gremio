@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    <!-- Java Script para a seta que te leva para o ínicio -->
     <button onclick="topFunction()" id="arrow" title="Go to top">^</button>
 
+    <!-- Navegação horizontal -->
     <ul class="topnav">
         <img id="gremio_img" src="Midias/Grêmio_foto.png" alt="">
         <li><a href="index.html" id="active">Sobre esse site</a></li>
@@ -19,66 +21,69 @@
         <li><a href="sobre_gremio.html">Sobre o grêmio</a></li>
         <li><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
         <li><a href="seufeedback.html">Feedback</a></li>
+        <!-- Botão para a navegação na vertical -->
+        <button class="openbtn" onclick="openNav()">☰</button>
     </ul>
 
+    <!-- Navegação na vertical -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#sobre">Sobre esse site</a>
+        <a href="#como_feito">Como o site foi feito</a>
+    </div>
 
+    <div class="row">
+        <div id="gremio" id="sobre">
+            <div class="card">
+                <h1>Sobre este site</h1>
+                <h3>Última atualização em 12 de setembro de 2025.</h3>
+                <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
+                <p> O grêmio do UPT de Uberaba tem como objetivo representar os estudantes da escola. Para fazer
+                    isso, foi decidido criar esse site para que, assim, todos possam obter as informações
+                    necessárias em caso de dúvidas (como nosso contato, como o if funciona, etc). Aqui, você poderá
+                    conhecer os membros do grêmio, obter informações sobre o IF
+                    (eventos próximos, linguajar, professores, cronogramas, etc), votar sobre mudanças ou eventos do
+                    grêmio, além de poder responder à formulários de feedback.</p>
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
+                <p> Em <b>"IF para calouros"</b>, falamos sobre as coisas básicas do IF que fazerão parte do seu dia a
+                    dia, desde de
+                    modos de falar/siglas (TDS, TELE, TCG) para os sites usados, eventos que você poderá aguardar, e
+                    dicas de
+                    pessoas que já estiveram em seu lugar.
+                </p>
 
+                <p> Em <b>"Sobre o grêmio"</b>, você irá conhecer o que é o grêmio (com documentos oficiais!), quais são
+                    os
+                    membros da atual chapa bem as posições faltantes e projetos que o grêmio já realizou.</p>
 
-        <div class="row">
-            <div id="main">
-                <button class="openbtn" onclick="openNav()">☰</button>
+                <p> Em <b>"Agenda do IF & Grêmio"</b>, colocaremos planejamentos do IF e do grêmio que você talvez não
+                    saiba (seja por
+                    ser calouro ou não), como a SNC, Festa Junina, JIF, entre outros.
+                </p>
+
+                <p> Em <b>"Feedback"</b>, você poderá preencher formulários sobre assuntos variados que precisamos de
+                    sua
+                    opinião sobre, como: como o site está, votações, sugestões de eventos do
+                    grêmio, feedback sobre eventos passados e tudo mais. Por favor dê uma olhada nessa aba de tempos
+                    em tempos e dê a sua opinião! Apenas assim iremos conseguir melhorar
+                    e ser o grêmio estudantil que os alunos querem.
+                </p>
             </div>
+            <div class="card" id="como_feito">
+                <h1>Como esse site foi feito</h1>
+                <h3>Última atualização em 12 de setembro de 2025.</h3>
+                <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
+                <p> Esse site foi criado por uma aluna do primeiro ano do Técnico de Desenvolvimento de Sistemas
+                    (TDS), sendo utilizado as linguagens HTML, CSS e javascript. O VisualCode foi utilizado para a
+                    programação,
+                    o w3school foi usado como referência (e muitas vezes copiado), e o netifly para colocar o site
+                    no ar. Caso você queira ver como esse site foi programado, aperte "crtl + shift + c" ou aperte o
+                    botão direito do mouse e clique em "Inspecionar elemento"; Você deve conseguir ver todo o código
+                    caso queira estudar ou copiar. </p>
 
-            <div id="gremio">
-                <div class="card">
-                    <h1>Sobre este site</h1>
-                    <h3>Última atualização em 18 de agosto de 2025.</h3>
-                    <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
-                    <p> O grêmio do UPT de Uberaba tem como objetivo representar os estudantes da escola. Para fazer
-                        isso, foi decidido criar esse site para que, assim, todos possam obter as informações
-                        necessárias em caso de dúvidas (como nosso contato, como o if funciona, etc). Aqui, você poderá
-                        conhecer os membros do grêmio, obter informações sobre o IF
-                        (eventos próximos, linguajar, professores, cronogramas, etc), votar sobre mudanças ou eventos do
-                        grêmio, além de poder responder à formulários de feedback.</p>
-                    <p> Em "IF para calouros", falamos sobre as coisas básicas do IF que fazeram parte do seu dia a dia,
-                        desde de modos de
-                        falar (TDS, TELE, TCG) para truques com o site do IF.
-                    </p>
-                    <p> Em "Sobre o grêmio", você irá conhecer sobre os atuais membros do grêmio bem como posições
-                        faltantes que você pode votar em!</p>
-                    <p> Em "IF/Grêmio", colocaremos planejamentos do IF e do grêmio que você talvez não saiba (seja por
-                        ser calouro ou não), como a SNC, Festa Junina,
-                        entre outros.
-                    </p>
-                    <p> Em "Feedback", você poderá preencher formulários sobre assuntos variados que precisamos de sua
-                        opinião sobre, como: como o site está, votações, sugestões de eventos do
-                        grêmio, feedback sobre eventos passados e tudo mais. Por favor dê uma olhada nessa aba de tempos
-                        em tempos e dê a sua opinião! Apenas assim iremos conseguir melhorar
-                        e ser o grêmio estudantil que os alunos querem.
-                    </p>
-                </div>
-                <div class="card">
-                    <h1>Como esse site foi feito</h1>
-                    <h3>Última atualização em 18 de agosto de 2025.</h3>
-                    <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
-                    <p> Esse site foi criado por uma aluna do primeiro ano do Técnico de Desenvolvimento de Sistemas
-                        (TDS), sendo utilizado as linguagens HTML e CSS. O VisualCode foi utilizado para a programação,
-                        o w3school foi usado como referência (e muitas vezes copiado), e o netifly para colocar o site
-                        no ar. Caso você queira ver como esse site foi programado, aperte "crtl + shift + c" ou aperte o
-                        botão direito do mouse e clique em "Inspecionar elemento"; Você deve conseguir ver todo o html e
-                        css caso queira estudar ou copiar. </p>
-
-                </div>
             </div>
         </div>
+    </div>
 
 
     <footer>
@@ -123,7 +128,6 @@
             document.getElementById("main").style.marginLeft = "0";
         }
     </script>
-
 
 </body>
 
