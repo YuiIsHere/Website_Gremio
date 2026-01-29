@@ -12,29 +12,34 @@
 <body>
     <!-- Java Script para a seta que te leva para o ínicio -->
     <button onclick="topFunction()" id="arrow" title="Go to top">^</button>
-
+    
     <!-- Navegação horizontal -->
     <ul class="topnav">
         <img id="gremio_img" src="Midias/Grêmio_foto.png" alt="">
+        <!-- <button onclick="myFunction()"><img src="Midias/moonpng.png" alt="DarkMode" class="moonpng" class="trilho" id="trilho"></button> -->
         <li><a href="index.html" id="active">Sobre esse site</a></li>
         <li><a href="sobreoif.html">IF para calouros</a></li>
         <li><a href="sobre_gremio.html">Sobre o grêmio</a></li>
         <li><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
         <li><a href="seufeedback.html">Feedback</a></li>
         <!-- Botão para a navegação na vertical -->
+        <script src="java.js"></script>    
         <button class="openbtn" onclick="openNav()">☰</button>
     </ul>
 
     <!-- Navegação na vertical -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#sobre">Sobre esse site</a>
-        <a href="#como_feito">Como o site foi feito</a>
+        <a href="sobreoif.html">IF para calouros</a>
+        <a href="sobre_gremio.html">Sobre o grêmio</a>
+        <a href="planejamentos.html">Agenda do IF & Grêmio</a>
+        <a href="seufeedback.html">Feedback</a>
     </div>
 
     <div class="row">
         <div id="gremio" id="sobre">
             <div class="card">
+                <br>
                 <h1>Sobre este site</h1>
                 <h3>Última atualização em 12 de setembro de 2025.</h3>
                 <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
@@ -127,6 +132,12 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
+
+        function myFunction() {
+        var element = document.body;
+        element.classList.toogle("dark-mode");
+        }
+
     </script>
 
 </body>

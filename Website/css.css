@@ -1,9 +1,14 @@
 /*Top nav*/
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 ul {
@@ -19,11 +24,16 @@ ul {
 }
 
 .topnav {
-  padding-left: 140px;
+  padding-left: 90px;
   position: fixed;
   width: 100%;
   z-index: 2;
-  align-items: center;
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: row;
+  /* align-content: flex-start; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .topnav li {
@@ -63,6 +73,16 @@ ul {
   height: 105px;
   /* object-fit: contain; */
 
+}
+
+.moonpng {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  width: 70px;
+  /* height: 70px; */
+  margin: 10px;
+  /* background: #f1f1f1; */
 }
 
 /* Side nav */
@@ -105,7 +125,7 @@ ul {
 }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   background-color:#002221;
   color: white;
@@ -114,6 +134,7 @@ ul {
   position: fixed;
   right: 0;
   border: none;
+  opacity: 0;
 }
 
 .openbtn:hover {
@@ -126,16 +147,7 @@ ul {
   padding-top: 100px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
 
-  .sidebar a {
-    font-size: 18px;
-  }
-}
 
 /**/
 
@@ -254,6 +266,20 @@ footer h2 {
 
   .column {
     width: 55%;
+  }
+}
+
+/* On smaller screens, where height is less than 900px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 900px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 10px;
+  }
+  .openbtn {
+    opacity: 100%;
   }
 }
 
