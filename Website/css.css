@@ -61,7 +61,7 @@ ul {
 
 #gremio_img {
   position: absolute;
-  left: 80px;
+  left: 0px;
   top: 0px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -84,7 +84,7 @@ ul {
   width: 0;
   position: fixed;
   z-index: 2;
-  left: 0;
+  right: 0;
   background-color: #002221;
   overflow-x: hidden;
   transition: 0.5s;
@@ -115,7 +115,6 @@ ul {
   font-size: 36px;
   margin-right: 30px;
   background: #002221;
-  color: #7f9c40;
 }
 
 .openbtn {
@@ -126,8 +125,7 @@ ul {
   color: white;
   padding: 10px 35px;
   position: fixed;
-  left: 0;
-  top: 0;
+  right : 0;
   border: none;
   opacity: 0;
 }
