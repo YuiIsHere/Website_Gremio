@@ -1,14 +1,14 @@
 /*Top nav*/
 
 .dark-mode {
-    background-color: black;
-    color: white;
-  }
+  background-color: black;
+  color: white;
+}
 
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 
 ul {
@@ -61,7 +61,7 @@ ul {
 
 #gremio_img {
   position: absolute;
-  left: 80px;
+  left: 0px;
   top: 0px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -84,7 +84,7 @@ ul {
   width: 0;
   position: fixed;
   z-index: 2;
-  left: 0;
+  right: 0;
   background-color: #002221;
   overflow-x: hidden;
   transition: 0.5s;
@@ -115,7 +115,6 @@ ul {
   font-size: 36px;
   margin-right: 30px;
   background: #002221;
-  color: #7f9c40;
 }
 
 .openbtn {
@@ -124,10 +123,10 @@ ul {
   text-align: center;
   background-color: #002221;
   color: white;
-  padding: 10px 35px;
+  /* padding: 10px 35px; */
   position: fixed;
-  left: 0;
-  top: 0;
+  right: 0;
+  /* top: 0; */
   border: none;
   opacity: 0;
 }
@@ -185,9 +184,10 @@ ul {
 .card {
   background-color: white;
   padding-left: 40px;
-  margin-left: 38px;
-  margin-right: 38px;
   margin-top: 100px;
+  margin-right: 38px;
+  margin-bottom: 10px;
+
 }
 
 /* Clear floats after the columns */
@@ -236,10 +236,10 @@ footer h2 {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .topnav a {
     float: none;
-    width: 90%;
+    /* width: 90%; */
   }
 
   div p {
@@ -249,6 +249,15 @@ footer h2 {
   .topnav {
     display: flex;
     flex-direction: column;
+  }
+
+  .big_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .big_text {
+    font-size: 50px;
   }
 
   #gremio_img {
@@ -261,10 +270,10 @@ footer h2 {
     margin-bottom: 10px;
   }
 
-  .sidebar a{
+  .sidebar a {
     font-size: 20px;
   }
-  
+
   .openbtn {
     opacity: 100%;
   }
@@ -279,9 +288,9 @@ footer h2 {
     display: none;
   }
 
-  .topnav li a #active{
+  .topnav li a #active {
     text-align: center;
-    
+
   }
 
   .card {
