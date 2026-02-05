@@ -12,18 +12,18 @@
 <body>
     <!-- Java Script para a seta que te leva para o ínicio -->
     <button onclick="topFunction()" id="arrow" title="Go to top">^</button>
-    
+
     <!-- Navegação horizontal -->
     <ul class="topnav">
         <img id="gremio_img" src="Midias/Grêmio_foto.png" alt="">
         <!-- <button onclick="myFunction()"><img src="Midias/moonpng.png" alt="DarkMode" class="moonpng" class="trilho" id="trilho"></button> -->
         <li><a href="index.html" id="active">Sobre esse site</a></li>
-        <li><a href="sobreoif.html">IF para calouros</a></li>
-        <li><a href="sobre_gremio.html">Sobre o grêmio</a></li>
-        <li><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
-        <li><a href="seufeedback.html">Feedback</a></li>
+        <li class="hidden"><a href="sobreoif.html" >IF para calouros</a></li>
+        <li class="hidden"><a href="sobre_gremio.html">Sobre o grêmio</a></li>
+        <li class="hidden"><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
+        <li class="hidden"><a href="seufeedback.html">Feedback</a></li>
         <!-- Botão para a navegação na vertical -->
-        <script src="java.js"></script>   
+        <script src="java.js"></script>
         <button class="openbtn" onclick="openNav()">☰</button>
     </ul>
 
@@ -40,7 +40,7 @@
         <div id="gremio">
             <div class="card">
                 <h1>Sobre este site</h1>
-                <h3>Última atualização em 12 de setembro de 2025.</h3>
+                <h3>Última atualização em 4 de fevereiro de 2026.</h3>
                 <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
                 <p> O grêmio do UPT de Uberaba tem como objetivo representar os estudantes da escola. Para fazer
                     isso, foi decidido criar esse site para que, assim, todos possam obter as informações
@@ -62,7 +62,8 @@
 
                 <p> Em <b>"Agenda do IF & Grêmio"</b>, colocaremos planejamentos do IF e do grêmio que você talvez não
                     saiba (seja por
-                    ser calouro ou não), como a SNC, Festa Junina, JIF, entre outros.
+                    ser calouro ou não), como a SNC, Festa Junina, JIF, entre outros. No momento da atualização desse site,
+                    essa aba ainda está em construção, mas fique de olho para novidades futuras!
                 </p>
 
                 <p> Em <b>"Feedback"</b>, você poderá preencher formulários sobre assuntos variados que precisamos de
@@ -75,15 +76,15 @@
             </div>
             <div class="card">
                 <h1>Como esse site foi feito</h1>
-                <h3>Última atualização em 12 de setembro de 2025.</h3>
-                <img src="Midias/upt_iftm.png" alt="Imagem do Campus UPT Uberaba" class="fakeimg1">
+                <h3>Última atualização em 4 de fevereiro de 2026.</h3>
+                <img src="Midias/programação.png" alt="Imagem genêrica de programação" class="fakeimg1">
                 <p> Esse site foi criado por uma aluna do primeiro ano do Técnico de Desenvolvimento de Sistemas
                     (TDS), sendo utilizado as linguagens HTML, CSS e javascript. O VisualCode foi utilizado para a
                     programação,
-                    o w3school foi usado como referência (e muitas vezes copiado), e o netifly para colocar o site
-                    no ar. Caso você queira ver como esse site foi programado, aperte "crtl + shift + c" ou aperte o
-                    botão direito do mouse e clique em "Inspecionar elemento"; Você deve conseguir ver todo o código
-                    caso queira estudar ou copiar. </p>
+                    o w3school foi usado como referência (e muitas vezes copiado), e o <a
+                        href="https://www.netlify.com/" target="_blank">netlify</a> para colocar o site
+                    no ar. Caso você queira ver como esse site foi programado, veja o código no <a
+                        href="https://github.com/YuiIsHere/Website_Gremio" target="_blank">Github</a>. </p>
 
             </div>
         </div>
@@ -133,8 +134,8 @@
         }
 
         function myFunction() {
-        var element = document.body;
-        element.classList.toogle("dark-mode");
+            var element = document.body;
+            element.classList.toogle("dark-mode");
         }
 
     </script>
