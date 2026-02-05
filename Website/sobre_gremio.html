@@ -19,22 +19,22 @@
         <li><a href="sobreoif.html">IF para calouros</a></li>
         <li><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
         <li><a href="seufeedback.html">Feedback</a></li>
+        <script src="java.js"></script>   
         <button class="openbtn" onclick="openNav()">☰</button>
     </ul>
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="sobreoif.html">- IF para calouros</a>
-        <a href="index.html">Sobre esse site</a>
+        <a href="index.html">- Sobre esse site</a>
         <a href="planejamentos.html">- Agenda do IF & Grêmio</a>
         <a href="seufeedback.html">- Feedback</a>
     </div>
 
-    <div class="row">
+        <div class="row">
         <div id="gremio">
-            <div class="card" id="sobre">
-                <br> <br>
-                <h1>Sobre o grêmio e suas responsabilidades</h1>
+            <div class="card">
+                <h1 class="big_text">Sobre o grêmio e suas responsabilidades</h1>
                 <h3>Última atualização em 18 de agosto de 2025.</h3>
                 <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
                 <p> A definição dada para "grêmio estudantil" pelo google é: "é uma associação autônoma de
@@ -60,7 +60,7 @@
                 <h5>Última atualização em 24 de agosto de 2025.</h5>
                 <p> </p>
             </div>
-            <div class="card" id="membros">
+            <div class="card">
                 <h1>Membros do grêmio</h1>
                 <h5>Última atualização em 24 de agosto de 2025.</h5>
                 <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
@@ -83,9 +83,11 @@
                     <b>Diretor de Saúde e Meio Ambiente: Cargo aberto.</b> <br> <br>
                     <b>Suplentes</b>: Luís Felipe Silva Araújo TELE 2, Alexandre
                 </p>
+
             </div>
         </div>
     </div>
+
 
     <footer>
         <h2>Site oficial do grêmio estudantil.</h2>
@@ -94,7 +96,6 @@
         <p>Instagram: <a href="https://www.instagram.com/jornal.nexus?igsh=MXhycWs0M3E5ZHZ5bw==">Clique aqui!</a></p>
         <p>Whattsapp: (34) 99242-4300 <br> (34) 99667-5398</p>
     </footer>
-
 
 
     <script>
@@ -129,6 +130,12 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
+
+        function myFunction() {
+        var element = document.body;
+        element.classList.toogle("dark-mode");
+        }
+
     </script>
 
 </body>
