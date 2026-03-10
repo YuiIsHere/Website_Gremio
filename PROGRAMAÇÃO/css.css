@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #43bdb9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding-top: 5px; */
+    height: 150px;
+    color: white;
+}
+
+.sub-nav {
+    position: sticky;
+    display: flex;
+    padding: 5;
+    margin: 0;
+    height: 80px;
+    z-index: 4;
+    overflow: hidden;
+    top: 0;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #1e5553;
+}
+
+.sub-nav a:hover {
+    color: #4bb3af;
+    font-weight: bold;
+}
+
+.sub-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+}
+
+
+.nav {
+    /* z-index: 2; */
+    position: sticky;
+    width: 100%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #19827f;
+    color: white;
+    /* margin-bottom: 200px; */
+    /* padding: 20px; */
+}
+
+#footer {
+    background-color: #318986;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+
+img:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+/*Ref do abaixo: https://stackoverflow.com/questions/34689047/pure-css-3-image-slider-without-javascript-or-radio-inputs */
+.destaque {
+    position: static;
+    overflow: hidden;
+    height: 736px;
+    width: 80%;
+    margin: 0 10%;
+    /* padding: 10px; */
+    /* Or set a fixed height */
+}
+
+/* SLIDER */
+.destaque .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.slider .slider_img {
+    background-color: #1e7a77;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.slider .slider_img img {
+    /* flex-shrink: 0; */
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    background-size: contain;
+    /* margin: 10px; */
+}
+
+/* SLIDES */
+.destaque .slider>* {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+/* .destaque .prevNext {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+}
+
+.destaque .prevNext>div+div {
+    visibility: hidden;
+}
+
+.destaque .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.destaque .prevNext a:hover {
+    opacity: 1;
+}
+
+.destaque .prevNext a+a {
+    right: 0px;
+} */
+
+/* NAVIGATION */
+.destaque .bullets {
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
+    /* margin-top: 100px; */
+    width: 100%;
+    text-align: center;
+}
+
+.destaque span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    top: -100vh;
+}
+
+.destaque .bullets>a {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+}
+
+.destaque .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+    /* Dim all but first */
+}
+
+/* ACTIVE NAVIGATION ANCHOR */
+.destaque>span:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s4:target~.bullets>*:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* .destaque>span:target~.prevNext>* {
+    visibility: hidden;
+}
+
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target~.prevNext>*:nth-child(4) {
+    visibility: visible;
+} */
+
+/* SLIDER ANIMATION POSITIONS */
+#s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+
+.desconto {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #19827f;
+}
+
+.desconto img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+.gratuitos {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.gratuitos img {
+    width: 20%;
+    height: auto;
+    margin: 5px;
+}
+
+.populares {
+    display: flex;
+    /* margin: 20px; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.populares p {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.populares img {
+    height: 600px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.populares div {
+    background-color:  #1c5352;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10%;
+}
