@@ -13,11 +13,12 @@
     <button onclick="topFunction()" id="arrow" title="Go to top">^</button>
     <ul class="topnav">
         <img id="gremio_img" src="Midias/Grêmio_foto.png" alt="">
-        <li class="hidden"><a href="index.html">Sobre esse site</a></li>
-        <li class="hidden"><a href="sobreoif.html">IF para calouros</a></li>
-        <li class="hidden"><a href="sobre_gremio.html">Sobre o grêmio</a></li>
-        <li class="hidden"><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
+        <li><a href="index.html">Sobre esse site</a></li>
+        <li><a href="sobreoif.html" >IF para calouros</a></li>
+        <li><a href="sobre_gremio.html">Sobre o grêmio</a></li>
+        <li><a href="planejamentos.html">Agenda do IF & Grêmio</a></li>
         <li><a href="seufeedback.html" id="active">Feedback</a></li>
+        <script src="java.js"></script>
         <button class="openbtn" onclick="openNav()">☰</button>
     </ul>
 
@@ -26,7 +27,7 @@
         <a href="sobreoif.html">- IF para calouros</a>
         <a href="sobre_gremio.html">- Sobre o grêmio</a>
         <a href="planejamentos.html">- Agenda do IF & Grêmio</a>
-        <li><a href="index.html">Sobre esse site</a></li>
+        <li><a href="index.html">- Sobre esse site</a></li>
     </div>
 
     <br>
@@ -105,6 +106,23 @@
         }
     </script>
 
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        function myFunction() {
+        var element = document.body;
+        element.classList.toogle("dark-mode");
+        }
+
+    </script>
 
 
 </body>
